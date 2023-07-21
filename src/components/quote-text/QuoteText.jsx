@@ -1,9 +1,14 @@
 import "./quote-text.css";
+import SkeletonCard from "../skeleton/SkeletonCard";
 
-function QuoteText({ text }) {
+function QuoteText({ text, loading }) {
   return (
     <div className="quote-container">
-      <p className="quote-text">&quot;{text}&quot;</p>
+      {loading ? (
+        <SkeletonCard />
+      ) : (
+        <p className="quote-text">&quot;{text}&quot;</p>
+      )}
     </div>
   );
 }

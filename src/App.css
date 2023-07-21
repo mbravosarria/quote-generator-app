@@ -1,8 +1,8 @@
 #root {
   max-width: 960px;
+  width: 100%;
   margin: 0 auto;
   padding: 2rem;
-  text-align: center;
 }
 
 .author-title {
@@ -20,11 +20,26 @@
 
   color: #333333;
 }
+.skeleton {
+  border-left: 8px solid #f7df94;
+  padding-left: 107px;
+}
+
+.skeletons__container {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
 
 @media only screen and (max-width: 600px) {
   .author-title {
     padding-left: 14px;
     font-weight: 500;
     font-size: 26px;
+  }
+
+  .skeleton {
+    border-left: 4px solid #f7df94;
+    padding-left: 10px;
   }
 }

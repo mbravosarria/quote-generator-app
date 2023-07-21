@@ -1,10 +1,11 @@
 import "./random-button.css";
 
-function RandomButton({ action }) {
+function RandomButton({ action, loading }) {
   return (
     <a className="random-button" onClick={action}>
       <p>random</p>
       <svg
+        className={loading ? "spin" : ""}
         height="21"
         viewBox="0 0 21 21"
         width="21"

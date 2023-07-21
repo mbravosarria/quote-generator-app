@@ -25,7 +25,7 @@ function Home() {
 
   return (
     <>
-      <RandomButton action={randomQuote} />
+      <RandomButton action={randomQuote} loading={loading} />
       <QuoteText text={quote?.quoteText} loading={loading} />
       <AuthorCard
         author={quote?.quoteAuthor}

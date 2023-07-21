@@ -1,8 +1,9 @@
 .random-button {
   display: flex;
   position: absolute;
-  top: 0;
+  top: 2%;
   right: 100px;
+  gap: 8px;
   align-items: center;
   justify-content: end;
 
@@ -10,12 +11,18 @@
     "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue",
     sans-serif;
   font-style: normal;
-  font-weight: 500;
+  font-weight: bold;
   font-size: 18px;
   line-height: 120%;
   /* identical to box height, or 22px */
 
   color: #333333;
+  background: #f7df94;
+
+  border-radius: 12px;
+  padding-inline: 20px;
+
+  cursor: pointer;
 }
 
 .random-button > p,
